@@ -8,12 +8,12 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class ImdbApplication {
+public class Application {
 
   public static void main(String[] args) {
 
     ConfigurableApplicationContext configurableApplicationContext =
-        SpringApplication.run(ImdbApplication.class, args);
+        SpringApplication.run(Application.class, args);
 
     MovieRepository movieRepository = configurableApplicationContext.getBean(MovieRepository.class);
   }
